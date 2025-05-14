@@ -1,0 +1,37 @@
+  (i)      pnorm(2.3, mean=3.0, sd=0.5) 
+                  [1] 0.08075666 
+       (ii)     pnorm(3.1, mean=3.0, sd=0.5, lower.tail=FALSE) 
+                  [1] 0.1586553 
+       (iii)    pnorm(3.5, mean=3.0, sd=0.5) -   pnorm(2.5, mean=3.0, sd=0.5) 
+                  [1] 0.6826895
+
+
+
+
+                  To test hypothesis about population mean: 
+(a)For a two-tailed test 
+x = c( N
+ a a a ,..... , 2 1
+ ) 
+t.test(x,alternative="two.sided",mu=) 
+(b) For a one-tailed test 
+x = c( N
+ a a a ,..... , 2 1
+ ) 
+t.test(x,alternative="less"/"greater",mu=) 
+    2.  To test hypothesis about two means 
+A= c( m
+ a a a ,..... , 2 1
+ )   
+B = c( n
+ b b b ,..... , 2 1
+ )    
+t.test(A,B,alternative="two.sided"/"less"/"greater",, var.equal=TRUE)  
+    3.  To use paired t-test 
+A= c( m
+ a a a ,..... , 2 1
+ )   
+B = c( n
+ b b b ,..... , 2 1
+ )    
+t.test(A,B,alternative="greater"/"less"/"two.sided",paired=TRUE)
