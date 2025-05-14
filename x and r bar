@@ -1,0 +1,18 @@
+R code to create dataframe 
+S1=c(a1 , a2 ,……) 
+S2=c(b1 , b2 ,……) 
+A= as.data.frame(rbind(S1,S2,……..)) 
+A 
+2. For X chart: 
+Xbarchart= qcc(data = A, 
+                   type = "xbar", 
+                   sizes = n,   # n=number of items in each sample 
+                   title = "X-bar Chart ",                     
+                   plot = TRUE) 
+ 
+      3. For R chart: 
+rchart = qcc(data = A, 
+                   type = "R", 
+                   sizes = n,  # n=number of items in each sample 
+                   title = "R Chart", 
+                   plot = TRUE) 
