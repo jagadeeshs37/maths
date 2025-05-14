@@ -1,0 +1,22 @@
+
+x=c(40,42,39,45,38,39,40) 
+y=c(39,41,42,42,44,40) 
+var.test(x, y, ratio = 1, 
+alternative = c("two.sided"),  
+conf.level = 0.95)
+
+
+
+accident=c(14,16,8,12,11,9,14) 
+p=c(1/7,1/7,1/7,1/7,1/7,1/7,1/7) 
+a=chisq.test(accident,p=c(1/7,1/7,1/7,1/7,1/7,1/7,1/7)) 
+a 
+
+
+
+
+men = c(100, 120, 60) 
+women = c(350, 200, 90) 
+icecream = as.data.frame(rbind(men, women)) 
+chisq.test(icecream,simulate.p.value=T)
+
