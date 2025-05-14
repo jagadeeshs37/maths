@@ -1,0 +1,46 @@
+mode=function(x){ 
+ux= unique(x) 
+ux[which.max(tabulate(match(x,ux)))] 
+} 
+# Find the mode of the numbers 2,1,2,3,1,2,3,4,1,5,5,3,2,3 
+x = c(2,1,2,3,1,2,3,4,1,5,5,3,2,3) 
+# Calculate the mode using the user function. 
+result= mode(x) 
+print(result) 
+
+To construct the scatter plot with the variables x and y 
+x=c(a,b,....) 
+y=c(l,m,....) 
+plot(x,y, xlab = 
+“....”,ylab=”…”,xlim=c(0,10),ylim=c(0,25),col=c(“…”),main=”…..”) 
+ 
+To find the correlation between x and y 
+x=c(a,b,....) 
+y=c(l,m,....) 
+r=cor(x,y) 
+r 
+ 
+To find the Spearman’s rank correlation coefficient between x and 
+y 
+x=c(a,b,....) 
+y=c(l,m,....) 
+r=cor(x,y,method=”spearman”) 
+r 
+ 
+To find regression line of y on x 
+regyx=lm(y~x)    #lm stands for linear model 
+16 
+ 
+ 
+5. 
+ 
+6. 
+ 
+regyx 
+ 
+To find regression line of x on y 
+regxy=lm(x~y) 
+regxy 
+To construct the regression plot of y on x 
+plot(x,y) 
+abline(lm(y ~ x),col="---")
