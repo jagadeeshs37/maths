@@ -1,0 +1,32 @@
+pain=c(4,5,4,3,2,4,3,4,4,6,8,4,5,4,6,5,8,6,6,7,6,6,7,5,6,5,5) 
+drug=c(rep("A",9),rep("B",9),rep("C",9)) 
+data=data.frame(pain,drug) 
+data 
+results=aov(pain~drug,data=data) 
+summary(results) 
+
+
+
+a=c(44,46,34,43,38,38,40,36,38,42,47,52,44,46,49,36,43,32,33,39) 
+f=c("w1","w2","w3","w4","w5") 
+k=5 
+r=4 
+worker=gl(k,1,r*k,factor(f)) 
+worker 
+machine=gl(r,k,k*r)  
+machine 
+av = aov(a ~ worker+machine) 
+summary(av)
+
+
+
+a=c(a1 , a2 ,………) (entries entered columnwise) 
+f=c("row1","row2","row3","row4","row5") 
+k=5 
+r=4 
+A=gl(k,1,r*k,factor(f))  
+A 
+B=gl(r,k,k*r)  
+B 
+av = aov(a ~ A+B) 
+summary(av) 
